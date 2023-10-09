@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(4, 4, 4);
+    font-size: 16px;
+    font-family:"Inter",sans-serif;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr min(1440px.94%) 1fr;
+    grid-template-rows: 96px auto 72px
+    ;
+}
+
+.container >  {
+    grid-column: 2;
+}
+
+.container > fluid {
+    grid-column: 1 / -1;
+}
